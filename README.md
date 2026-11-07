@@ -3,6 +3,10 @@
 A Telegram bot that lets clients book appointments at a beauty salon, barbershop or any
 service business — in a few taps, 24/7, without calls or messages to the owner.
 
+<p align="center">
+  <img src="docs/demo.gif" alt="Booking flow demo: service, date, time, name, phone, confirmation and owner notification" width="300">
+</p>
+
 ## Features
 
 **For clients**
