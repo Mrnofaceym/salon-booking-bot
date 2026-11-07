@@ -1,0 +1,15 @@
+# systemd user service: ~/.config/systemd/user/salon-bot.service
+[Unit]
+Description=Salon booking Telegram bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=%h/salon-bot
+Environment=TZ=Europe/Kyiv
+ExecStart=%h/salon-bot/.venv/bin/python bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
